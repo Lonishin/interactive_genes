@@ -1,0 +1,47 @@
+library(shiny)
+library(ggplot2)
+
+functions <- c("x", "x^2", "x^3")
+
+# Define UI for application that plots functions
+ui <- fluidPage(
+  
+  # Sidebar layout with a input and output definitions
+  sidebarLayout(
+    
+    # Inputs
+    sidebarPanel(
+      
+      # Select variable for functions
+      selectInput(inputId = "func", 
+                  label = "Function:",
+                  choices = functions, 
+                  selected = "x")
+      
+    ),
+    
+    # Outputs
+    mainPanel(
+      plotOutput(outputId = "plot")
+    )
+  )
+)
+
+# Define server function required to create the plot
+server <- function(input, output) {
+  
+  # Create the rplot object the plotOutput function is expecting
+  output$plot <- renderPlot({
+    x <- seq(-10, 10, 0.01)
+    f <- function(x) {
+      eval(parse(text = input$func))
+    }
+    y <- f(x)
+    df <- data.frame(x, y)
+
+    ggplot(df, aes(x, y)) +geom_line()
+  })
+}
+
+# Create a Shiny app object
+shinyApp(ui = ui, server = server)
