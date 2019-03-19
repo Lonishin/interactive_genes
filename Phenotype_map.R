@@ -17,7 +17,7 @@ xmltop = xmlRoot(dt)
 xmltop[[1]]
 
 get_nodes_may_cause <- function(name) {
-  top = xmltop[[which(names[] == "Fasciolopsis buski")]]
+  top = xmltop[[which(names[] == name)]]
   toptable=ldply(xmlToList(top[[4]]), data.frame)
   
   toptable_Name = toptable[,grepl("*Name",names(toptable))]
@@ -83,16 +83,23 @@ server <- function(input, output) {
     
     maycause <- get_nodes_may_cause(input$phenotype)
     causedby <-get_nodes_caused_by(input$phenotype)
-    
 
-    node <- data.frame(id = 1:(length(maycause)+length(causedby)+1), label = paste(c(input$phenotype,c(causedby), c(maycause))))
-   
-    edge <- data.frame(from = c(2:((length(causedby)+length(maycause)+1))), to = rep.int(1, length(maycause)+length(causedby)), arrows = c("to"), shadow= c(TRUE), color = list(color = "blue", highlight = "red"))
-    visNetwork(node, edge, height = "1800px", width = "100%")%>% 
+    node <- data.frame(id = 1:(length(maycause)+length(causedby)+1), label = paste(c(input$phenotype,c(causedby), c(maycause))), group = c(rep("phenotype", 1), rep("causedby",length(causedby)), rep("maycause", length(maycause))))
+    
+    edge <- data.frame(from = c(rep.int(1, length(causedby)),c(length(causedby)+2):((length(causedby)+length(maycause)+1))), to = c(2:(length(causedby)+1)),rep.int(1, length(causedby)), arrows = c("to"), shadow= c(TRUE), color = list(color = "blue", highlight = "red"))
+    
+    #edge <- data.frame(from = c(2:((length(causedby)+length(maycause)+1))), to = rep.int(1, length(maycause)+length(causedby)), arrows = c("to"), shadow= c(TRUE), color = list(color = "blue", highlight = "red"))
+    visNetwork(node, edge)%>% 
       visInteraction(multiselect = T)%>% 
       visEvents(click = "function(nodes){
                 Shiny.onInputChange('click', nodes.nodes[0]);
                 ;}")%>%
+      visGroups(groupname = "phenotype", shape = "triangle", size = 35)%>%
+      visGroups(groupname = "causedby", color = "darkblue", size = 15)%>%
+      visGroups(groupname = "maycause", color = "red", size = 15)%>%
+      #visLayout(sortMethod = random)%>%
+      visLegend() %>%
+      visInteraction(navigationButtons = TRUE)%>%
       visOptions(collapse = TRUE)
     
   }) 
@@ -127,5 +134,3 @@ server <- function(input, output) {
 
 # Create a Shiny app object
 shinyApp(ui = ui, server = server)
-
- 
