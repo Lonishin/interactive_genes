@@ -86,18 +86,18 @@ server <- function(input, output) {
 
     node <- data.frame(id = 1:(length(maycause)+length(causedby)+1), label = paste(c(input$phenotype,c(causedby), c(maycause))), group = c(rep("phenotype", 1), rep("causedby",length(causedby)), rep("maycause", length(maycause))))
     
-    edge <- data.frame(from = c(rep.int(1, length(causedby)),c(length(causedby)+2):((length(causedby)+length(maycause)+1))), to = c(2:(length(causedby)+1)),rep.int(1, length(causedby)), arrows = c("to"), shadow= c(TRUE), color = list(color = "blue", highlight = "red"))
+    #edge <- data.frame(from = c(rep.int(1, length(causedby)),c(length(causedby)+2):((length(causedby)+length(maycause)+1))), to = c(2:(length(causedby)+1)),rep.int(1, length(causedby)), arrows = c("to"), shadow= c(TRUE), color = list(color = "blue", highlight = "red"))
     
-    #edge <- data.frame(from = c(2:((length(causedby)+length(maycause)+1))), to = rep.int(1, length(maycause)+length(causedby)), arrows = c("to"), shadow= c(TRUE), color = list(color = "blue", highlight = "red"))
+    edge <- data.frame(from = c(2:((length(causedby)+length(maycause)+1))), to = rep.int(1, length(maycause)+length(causedby)), arrows = c("to"), shadow= c(TRUE), color = list(color = "blue", highlight = "red"))
     visNetwork(node, edge)%>% 
       visInteraction(multiselect = T)%>% 
       visEvents(click = "function(nodes){
                 Shiny.onInputChange('click', nodes.nodes[0]);
                 ;}")%>%
-      visGroups(groupname = "phenotype", shape = "triangle", size = 35)%>%
+      visGroups(groupname = "phenotype", shape = "square", size = 35)%>%
       visGroups(groupname = "causedby", color = "darkblue", size = 15)%>%
       visGroups(groupname = "maycause", color = "red", size = 15)%>%
-      #visLayout(sortMethod = random)%>%
+      #visLayout(hierarchical = TRUE)%>%
       visLegend() %>%
       visInteraction(navigationButtons = TRUE)%>%
       visOptions(collapse = TRUE)
@@ -134,3 +134,5 @@ server <- function(input, output) {
 
 # Create a Shiny app object
 shinyApp(ui = ui, server = server)
+
+ 
