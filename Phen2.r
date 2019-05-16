@@ -5,6 +5,7 @@ library(visNetwork)
 library("RColorBrewer")
 library(plyr)
 library(DT)
+library(tidyr)
 
 
 dt <- xmlInternalTreeParse("disease_prod.xml")
@@ -61,27 +62,48 @@ str(name[2])
 
 #если мы хотим применить функцию поиска нодов для вектора с именами, прочитанными из txt. На выходе лист из листов. Если предки есть - то они в виде вектора, если нет - то NULL
 
-list_parents<-sapply(name, function (x){get_nodes_calculator(x)})
+recur_parent_list <- function(name){
+  list_parents<-sapply(name, function (x){get_nodes_calculator(x)})
+  print(list_parents)
+  list_parents_1<-Filter(Negate(is.null), list_parents)
+  reduce_parents_list <- Reduce(intersect, list_parents_1)
+  combinations<-combn(names(name), 2, simplify = F)
+  common = sapply(c(1:length(combinations)), function(x){Reduce(intersect, list_parents_1[combinations[[x]]])})
+  common
+}
 
-# убрать те листы, где нет родителей. Это видимо, терминальные ветки.
-list_parents_1<-Filter(Negate(is.null), list_parents)
-
-#если мы хотим найти общие элементы в листах предков всех
-Reduce(intersect, list_parents_1)
+recur_parent_list(name)
 
 #если хотим отдельные симптомы сравнить по наличию у них общих предков, то тогда их и пихаем в функцию
 Reduce(intersect, list_parents_1[c(1, 2)])
 
 phen_list_2<-c("Hepatic failure", "Obesity")
 
-list_parents_et<-sapply(phen_list_2, function(x){get_nodes_calculator(x)})
+recur_parent_list(phen_list_2)
+number = 3 # how many generations
+get_all_parent_list <- function(name){
+  list_parents_1 <- sapply(name, sapply, get_nodes_calculator)
+  list_parents_1<-Filter(Negate(is.null), list_parents_1)
+  list_parents_2 <- sapply(list_parents_1, sapply, get_nodes_calculator)
+  list_parents_2<-Filter(Negate(is.null), list_parents_2)
+  list_parents_3 <- sapply(list_parents_2, sapply, get_nodes_calculator)
+  list_parents_3<-Filter(Negate(is.null), list_parents_3)
+  list_parents_3
+}
+# лист листов связей
+parents_all <-get_all_parent_list(name)  
 
-Reduce(intersect, list_parents_1[a[[1]]])
+parents<- get_all_parent_list(parents_all)
 
-library(tidyr)
-names(list_parents_et)
-a<-combn(names(list_parents_1), 2, simplify = F)
+#через unlist
 
-list_parents_1[a[[1]]]
-
-sapply(c(1:length(a)), function(x){Reduce(intersect, list_parents_1[a[[x]]])})
+list_parents_1 <- sapply(name, get_nodes_calculator)
+list_parents_1<-Filter(Negate(is.null), list_parents_1)
+s <-unlist(list_parents_1)
+list_parents_2 <- sapply(list_parents_1, sapply, get_nodes_calculator)
+list_parents_2<-Filter(Negate(is.null), list_parents_2)
+s_1 <-unlist(list_parents_2)
+l <-recur_parent_list(s_1)
+l<-Filter(Negate(is.null), l)
+l[lapply(l,length)>0]
+ 
