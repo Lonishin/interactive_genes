@@ -5,6 +5,7 @@ library(visNetwork)
 library("RColorBrewer")
 library(plyr)
 library(DT)
+library(tidyr)
 
 
 dt <- xmlInternalTreeParse("disease_prod.xml")
@@ -60,11 +61,10 @@ ui <- fluidPage(
       
       
       # Select variable for functions
-      selectInput(inputId = "phenotype", 
-                  label = "Choose phenotype:",
-                  choices = names)
-      
-    ),
+      textAreaInput("phenotypes", "Put your phenotypes", "Kluver-Bucy syndrome
+Alzheimer disease
+Frontotemporal dementia
+Cerebrovascular accident")),
     
     # Outputs
     mainPanel(
@@ -75,34 +75,86 @@ ui <- fluidPage(
     )
   )
 )
+get_nodes_calculator <- function(x){
+  tryCatch(
+    expr = {
+      return(get_nodes_caused_by(x))
+      message("Successfully executed the log(x) call.")
+    },
+    error = function(e){
+      message('Caught an error!')
+    },
+    warning = function(w){
+      message('Caught an warning!')
+    },
+    finally = {
+      message('All done, quitting.')
+    }
+  )    
+}
+
+recur_parent_list <- function(name){
+  list_parents<-sapply(name, function (x){get_nodes_calculator(x)})
+  print(list_parents)
+  list_parents_1<-Filter(Negate(is.null), list_parents)
+  reduce_parents_list <- Reduce(intersect, list_parents_1)
+  combinations<-combn(names(name), 2, simplify = F)
+  common = sapply(c(1:length(combinations)), function(x){Reduce(intersect, list_parents_1[combinations[[x]]])})
+  common
+}
+
+get_all_parent_list <- function(name){
+  list_parents_1 <- sapply(name, sapply, get_nodes_calculator)
+  list_parents_1<-Filter(Negate(is.null), list_parents_1)
+  list_parents_2 <- sapply(list_parents_1, sapply, get_nodes_calculator)
+  list_parents_2<-Filter(Negate(is.null), list_parents_2)
+  list_parents_3 <- sapply(list_parents_2, sapply, get_nodes_calculator)
+  list_parents_3<-Filter(Negate(is.null), list_parents_3)
+  list_parents_3
+}
 
 # Define server function required to create the plot
 server <- function(input, output) {
   
   output$network <- renderVisNetwork({
+    phen_list <- req(input$phenotypes)
+    phen_list <- unlist(strsplit(phen_list, "[\n]"))
+    list_parents_1 <- sapply(phen_list, get_nodes_calculator)
+    print(list_parents_1)
+    list_parents_1<-Filter(Negate(is.null), list_parents_1)
+    s <-unlist(list_parents_1)
+    list_parents_2 <- sapply(list_parents_1, sapply, get_nodes_calculator)
+    list_parents_2<-Filter(Negate(is.null), list_parents_2)
+    s_1 <-unlist(list_parents_2)
+    l <-recur_parent_list(s_1)
+    l<-Filter(Negate(is.null), l)
+    l <-l[lapply(l,length)>0] 
+    l<-unlist(l)
+    tab <- table(l) 
+    tab <- as.data.frame(tab)
     
-    maycause <- get_nodes_may_cause(input$phenotype)
-    causedby <-get_nodes_caused_by(input$phenotype)
-
-    node <- data.frame(id = 1:(length(maycause)+length(causedby)+1), label = paste(c(input$phenotype,c(causedby), c(maycause))), group = c(rep("phenotype", 1), rep("causedby",length(causedby)), rep("maycause", length(maycause))))
+    #maycause <- get_nodes_may_cause(input$phenotype)
+    #causedby <-get_nodes_caused_by(input$phenotype)
+    node <- data.frame( id = 1:length(tab$l), label = tab$l)
+    #node <- data.frame(id = 1:(length(maycause)+length(causedby)+1), label = paste(c(input$phenotype,c(causedby), c(maycause))), group = c(rep("phenotype", 1), rep("causedby",length(causedby)), rep("maycause", length(maycause))))
     
     #edge <- data.frame(from = c(rep.int(1, length(causedby)),c(length(causedby)+2):((length(causedby)+length(maycause)+1))), to = c(2:(length(causedby)+1)),rep.int(1, length(causedby)), arrows = c("to"), shadow= c(TRUE), color = list(color = "blue", highlight = "red"))
     
-    edge <- data.frame(from = c(2:((length(causedby)+length(maycause)+1))), to = rep.int(1, length(maycause)+length(causedby)), arrows = c("to"), shadow= c(TRUE), color = list(color = "blue", highlight = "red"))
-    visNetwork(node, edge)%>% 
+    #edge <- data.frame(from = c(2:((length(causedby)+length(maycause)+1))), to = rep.int(1, length(maycause)+length(causedby)), arrows = c("to"), shadow= c(TRUE), color = list(color = "blue", highlight = "red"))
+    visNetwork(node)%>% 
       visInteraction(multiselect = T)%>% 
       visEvents(click = "function(nodes){
                 Shiny.onInputChange('click', nodes.nodes[0]);
                 ;}")%>%
-      visGroups(groupname = "phenotype", shape = "square", size = 35)%>%
-      visGroups(groupname = "causedby", color = "darkblue", size = 15)%>%
-      visGroups(groupname = "maycause", color = "red", size = 15)%>%
-      #visLayout(hierarchical = TRUE)%>%
       visLegend() %>%
       visInteraction(navigationButtons = TRUE)%>%
       visOptions(collapse = TRUE)
+      #for (i in 1:length(tab$l)){
+      #  visGroups(groupname = tab$l[[i]], shape = "square", size = 10*tab$Freq[[i]])
+      #}
+      #visLayout(hierarchical = TRUE)%>%
     
-  }) 
+}) 
   output$shiny_return <- renderPrint({
     visNetworkProxy("network") %>%
       l<- get_nodes_caused_by(input$phenotype)
@@ -110,6 +162,7 @@ server <- function(input, output) {
       selected_node = node[[input$click]]
       print(selected_node)
   })
+  
   
   observe({
     input$click
@@ -123,16 +176,26 @@ server <- function(input, output) {
   })
   
   output$table <- DT::renderDataTable(DT::datatable({
-    top = xmltop[[which(names[] == input$phenotype)]]
-    toptable=ldply(xmlToList(top[[4]]), data.frame)
-    toptable_Name = toptable[,grepl("*Name",names(toptable))]
-    toptable_cause <- subset(toptable_Name, toptable_Name$Name=="may cause or feature +")
-    toptable_phen_leaves = toptable_cause[,grepl("*Leaf3",names(toptable_cause))]
-    toptable_phen_leaves
+    phen_list <- req(input$phenotypes)
+    phen_list <- unlist(strsplit(phen_list, "[\n]"))
+    list_parents_1 <- sapply(phen_list, get_nodes_calculator)
+    print(list_parents_1)
+    list_parents_1<-Filter(Negate(is.null), list_parents_1)
+    s <-unlist(list_parents_1)
+    list_parents_2 <- sapply(list_parents_1, sapply, get_nodes_calculator)
+    list_parents_2<-Filter(Negate(is.null), list_parents_2)
+    s_1 <-unlist(list_parents_2)
+    l <-recur_parent_list(s_1)
+    l<-Filter(Negate(is.null), l)
+    l <-l[lapply(l,length)>0] 
+    l<-unlist(l)
+    tab <- table(l) 
+    tab <- as.data.frame(tab)
   }))
-}
+  }
 
 # Create a Shiny app object
 shinyApp(ui = ui, server = server)
+
 
  
