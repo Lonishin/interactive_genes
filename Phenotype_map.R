@@ -15,8 +15,21 @@ nodes <- xpathApply(dt, "//DiRooItem/Name")
 names <- xpathSApply(dt, "//DiRooItem/Name", xmlValue)
 names<-gsub(" information", "", names)
 xmltop = xmlRoot(dt)
-xmltop[[1]]
 
+# function to understand, if this phenotype in Drugs, hormones and biological mediators group
+is_pharmaceutical <- function(name){
+  top = xmltop[[which(names[] == name)]]
+  toptable=ldply(xmlToList(top[[4]]), data.frame)
+  toptable_Name = toptable[,grepl("*Name",names(toptable))]
+  toptable_cause <- subset(toptable_Name, toptable_Name[3]=="Drugs, hormones and biological mediators")
+  if(nrow(toptable_cause) == 0){
+    return(FALSE)
+  } else{
+    return(TRUE)
+  }
+}
+
+# function to get all nodes from input phenotype which may cause this phenotype
 get_nodes_may_cause <- function(name) {
   top = xmltop[[which(names[] == name)]]
   toptable=ldply(xmlToList(top[[4]]), data.frame)
@@ -33,6 +46,8 @@ get_nodes_may_cause <- function(name) {
   l<-unique.default(l)
   l
 }
+
+# function to get all nodes from input phenotype which caused by this phenotype
 get_nodes_caused_by <- function(name) {
   top = xmltop[[which(names[] == name)]]
   toptable=ldply(xmlToList(top[[4]]), data.frame)
@@ -50,7 +65,7 @@ get_nodes_caused_by <- function(name) {
   l
 }
 
-# Define UI for application that plots functions
+# Define UI for application 
 ui <- fluidPage(
   
   # Sidebar layout with a input and output definitions
@@ -60,12 +75,22 @@ ui <- fluidPage(
     sidebarPanel(
       
       
+      helpText("This is a phenotype map, where you can get all connections between input phenotypes.
+               See the example below"),
+      
       # Select variable for functions
       textAreaInput("phenotypes", "Put your phenotypes", "Kluver-Bucy syndrome
 Alzheimer disease
 Frontotemporal dementia
-Cerebrovascular accident")),
-    
+Cerebrovascular accident
+Endocarditis
+")
+      # radioButtons("disp", "Settings",
+      #              choices = c(Pharmaceutical = "pharm",
+      #                          All = "all"),
+      #              selected = "all")
+      
+    ),
     # Outputs
     mainPanel(
       visNetworkOutput("network"),
@@ -75,6 +100,9 @@ Cerebrovascular accident")),
     )
   )
 )
+
+# function which find out if this phenotype has connections with other
+
 get_nodes_calculator <- function(x){
   tryCatch(
     expr = {
@@ -93,6 +121,8 @@ get_nodes_calculator <- function(x){
   )    
 }
 
+# function to get all parent nodes from input phenotype in 1 generation
+
 recur_parent_list <- function(name){
   list_parents<-sapply(name, function (x){get_nodes_calculator(x)})
   print(list_parents)
@@ -103,6 +133,8 @@ recur_parent_list <- function(name){
   common
 }
 
+# function to get all parent nodes from input phenotype in 3 generation
+
 get_all_parent_list <- function(name){
   list_parents_1 <- sapply(name, sapply, get_nodes_calculator)
   list_parents_1<-Filter(Negate(is.null), list_parents_1)
@@ -112,36 +144,35 @@ get_all_parent_list <- function(name){
   list_parents_3<-Filter(Negate(is.null), list_parents_3)
   list_parents_3
 }
+# function to get table of all connections from phenotypes
 
-# Define server function required to create the plot
+get_tab <- function(phen_list){
+  phen_list <- unlist(strsplit(phen_list, "[\n]"))
+  list_parents_1 <- sapply(phen_list, get_nodes_calculator)
+  print(list_parents_1)
+  list_parents_1<-Filter(Negate(is.null), list_parents_1)
+  s <-unlist(list_parents_1)
+  list_parents_2 <- sapply(list_parents_1, sapply, get_nodes_calculator)
+  list_parents_2<-Filter(Negate(is.null), list_parents_2)
+  s_1 <-unlist(list_parents_2)
+  l <-recur_parent_list(s_1)
+  l<-Filter(Negate(is.null), l)
+  l <-l[lapply(l,length)>0] 
+  l<-unlist(l)
+  tab <- table(l) 
+  tab <- as.data.frame(tab)
+  
+}
+
+# Define server function required to create the app
 server <- function(input, output) {
+  
   
   output$network <- renderVisNetwork({
     phen_list <- req(input$phenotypes)
-    phen_list <- unlist(strsplit(phen_list, "[\n]"))
-    list_parents_1 <- sapply(phen_list, get_nodes_calculator)
-    print(list_parents_1)
-    list_parents_1<-Filter(Negate(is.null), list_parents_1)
-    s <-unlist(list_parents_1)
-    list_parents_2 <- sapply(list_parents_1, sapply, get_nodes_calculator)
-    list_parents_2<-Filter(Negate(is.null), list_parents_2)
-    s_1 <-unlist(list_parents_2)
-    l <-recur_parent_list(s_1)
-    l<-Filter(Negate(is.null), l)
-    l <-l[lapply(l,length)>0] 
-    l<-unlist(l)
-    tab <- table(l) 
-    tab <- as.data.frame(tab)
-    
-    #maycause <- get_nodes_may_cause(input$phenotype)
-    #causedby <-get_nodes_caused_by(input$phenotype)
+    tab = get_tab(phen_list = phen_list)
     node <- data.frame( id = 1:length(tab$l), label = tab$l)
-    #node <- data.frame(id = 1:(length(maycause)+length(causedby)+1), label = paste(c(input$phenotype,c(causedby), c(maycause))), group = c(rep("phenotype", 1), rep("causedby",length(causedby)), rep("maycause", length(maycause))))
-    
-    #edge <- data.frame(from = c(rep.int(1, length(causedby)),c(length(causedby)+2):((length(causedby)+length(maycause)+1))), to = c(2:(length(causedby)+1)),rep.int(1, length(causedby)), arrows = c("to"), shadow= c(TRUE), color = list(color = "blue", highlight = "red"))
-    
-    #edge <- data.frame(from = c(2:((length(causedby)+length(maycause)+1))), to = rep.int(1, length(maycause)+length(causedby)), arrows = c("to"), shadow= c(TRUE), color = list(color = "blue", highlight = "red"))
-    visNetwork(node)%>% 
+        visNetwork(node)%>% 
       visInteraction(multiselect = T)%>% 
       visEvents(click = "function(nodes){
                 Shiny.onInputChange('click', nodes.nodes[0]);
@@ -149,53 +180,14 @@ server <- function(input, output) {
       visLegend() %>%
       visInteraction(navigationButtons = TRUE)%>%
       visOptions(collapse = TRUE)
-      #for (i in 1:length(tab$l)){
-      #  visGroups(groupname = tab$l[[i]], shape = "square", size = 10*tab$Freq[[i]])
-      #}
-      #visLayout(hierarchical = TRUE)%>%
-    
+      
 }) 
-  output$shiny_return <- renderPrint({
-    visNetworkProxy("network") %>%
-      l<- get_nodes_caused_by(input$phenotype)
-      node <- data.frame(id = 1:(length(l)+1), label = paste(c(input$click,c(l))))
-      selected_node = node[[input$click]]
-      print(selected_node)
-  })
-  
-  
-  observe({
-    input$click
-    nodes <- data.frame(id = 1:15, 
-                        group = sample(LETTERS[1:5], 15, replace = TRUE))
-    edges <- data()$edges
-    
-    visNetworkProxy("network_proxy_update") %>%
-      visUpdateNodes(nodes = nodes) %>%
-      visUpdateEdges(edges = edges)
-  })
-  
   output$table <- DT::renderDataTable(DT::datatable({
     phen_list <- req(input$phenotypes)
-    phen_list <- unlist(strsplit(phen_list, "[\n]"))
-    list_parents_1 <- sapply(phen_list, get_nodes_calculator)
-    print(list_parents_1)
-    list_parents_1<-Filter(Negate(is.null), list_parents_1)
-    s <-unlist(list_parents_1)
-    list_parents_2 <- sapply(list_parents_1, sapply, get_nodes_calculator)
-    list_parents_2<-Filter(Negate(is.null), list_parents_2)
-    s_1 <-unlist(list_parents_2)
-    l <-recur_parent_list(s_1)
-    l<-Filter(Negate(is.null), l)
-    l <-l[lapply(l,length)>0] 
-    l<-unlist(l)
-    tab <- table(l) 
-    tab <- as.data.frame(tab)
-  }))
+    tab = get_tab(phen_list = phen_list)
+  }, options = list(orderClasses = TRUE)))
   }
 
 # Create a Shiny app object
 shinyApp(ui = ui, server = server)
-
-
  
