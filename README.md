@@ -12,9 +12,9 @@ The main goal of this project is to make convenient app for doctors and genetici
 
 The main packages, which are used here are Shiny and VisNetwork.
 
-You can find open this app in every browser, here is url - https://lonishin.shinyapps.io/interactive_phenotype_map/ 
+You can find open this app in every browser, you need to wait a little bit (need to work with optimisation),  here is url - https://lonishin.shinyapps.io/interactive_phenotype_map/ 
 
 This is how this program look like in browser:
 
-![Example](https://github.com/Lonishin/interactive_genes/blob/master/example.jpg)
+![Example](https://github.com/Lonishin/interactive_genes/blob/master/example1.jpg)
 
