@@ -1,0 +1,1106 @@
+<ArrayOfDiRooItem>
+  <DiRooItem>
+    <Url>http://www.diseasesdatabase.com/ddb32052.htm</Url>
+    <Name>Fasciolopsis buski information</Name>
+    <Synonyms>
+      <string>Fasciolopsis buski</string>
+      <string>Giant intestinal fluke</string>
+    </Synonyms>
+    <Leafs>
+      <DiLeafRaw>
+        <UrlParent>http://www.diseasesdatabase.com/ddb32052.htm</UrlParent>
+        <Url>http://www.diseasesdatabase.com/relationships.asp?glngUserChoice=32052&amp;bytRel=2&amp;blnBW=0&amp;strBB=LR&amp;blnClassSort=255&amp;Key={EB8C54B5-1FBC-4C24-986C-FC1D54FA7DA8}</Url>
+        <Name>may cause or feature +</Name>
+        <Leafs2>
+          <DiLeaf2>
+            <Name>Miscellaneous conditions</Name>
+            <Leafs3>
+              <DiLeaf3>
+                <Name>Malabsorption syndrome</Name>
+                <Url>http://www.diseasesdatabase.com/ddb7698.htm</Url>
+              </DiLeaf3>
+              <DiLeaf3>
+                <Name>Protein losing enteropathy</Name>
+                <Url>http://www.diseasesdatabase.com/ddb10811.htm</Url>
+              </DiLeaf3>
+            </Leafs3>
+          </DiLeaf2>
+          <DiLeaf2>
+            <Name>Nutritional conditions</Name>
+            <Leafs3>
+              <DiLeaf3>
+                <Name>Malabsorption syndrome</Name>
+                <Url>http://www.diseasesdatabase.com/ddb7698.htm</Url>
+              </DiLeaf3>
+            </Leafs3>
+          </DiLeaf2>
+        </Leafs2>
+      </DiLeafRaw>
+      <DiLeafRaw>
+        <UrlParent>http://www.diseasesdatabase.com/ddb32052.htm</UrlParent>
+        <Url>http://www.diseasesdatabase.com/relationships.asp?glngUserChoice=32052&amp;bytRel=0&amp;blnBW=0&amp;strBB=LR&amp;blnClassSort=0&amp;Key={EB8C54B5-1FBC-4C24-986C-FC1D54FA7DA8}</Url>
+        <Name>belong(s) to the category of +</Name>
+        <Leafs2>
+          <DiLeaf2>
+            <Name>Empty</Name>
+            <Leafs3>
+              <DiLeaf3>
+                <Name>Helminths and helminthic conditions</Name>
+                <Url>http://www.diseasesdatabase.com/ddb28826.htm</Url>
+              </DiLeaf3>
+            </Leafs3>
+          </DiLeaf2>
+        </Leafs2>
+      </DiLeafRaw>
+    </Leafs>
+  </DiRooItem>
+  <DiRooItem>
+    <Url>http://www.diseasesdatabase.com/ddb4847.htm</Url>
+    <Name>Fixed drug eruption information</Name>
+    <Synonyms>
+      <string>Fixed drug eruption</string>
+    </Synonyms>
+    <Leafs>
+      <DiLeafRaw>
+        <UrlParent>http://www.diseasesdatabase.com/ddb4847.htm</UrlParent>
+        <Url>http://www.diseasesdatabase.com/relationships.asp?glngUserChoice=4847&amp;bytRel=2&amp;blnBW=0&amp;strBB=RL&amp;blnClassSort=255&amp;Key={CB4EDCFD-A923-4F6E-BD41-EC8582CF0EEB}</Url>
+        <Name>may be caused by or feature of +</Name>
+        <Leafs2>
+          <DiLeaf2>
+            <Name>Chemicals</Name>
+            <Leafs3>
+              <DiLeaf3>
+                <Name>Potassium iodide</Name>
+                <Url>http://www.diseasesdatabase.com/ddb6926.htm</Url>
+              </DiLeaf3>
+            </Leafs3>
+          </DiLeaf2>
+          <DiLeaf2>
+            <Name>Drug groups</Name>
+            <Leafs3>
+              <DiLeaf3>
+                <Name>Barbiturates</Name>
+                <Url>http://www.diseasesdatabase.com/ddb1231.htm</Url>
+              </DiLeaf3>
+              <DiLeaf3>
+                <Name>Benzodiazepines</Name>
+                <Url>http://www.diseasesdatabase.com/ddb29548.htm</Url>
+              </DiLeaf3>
+              <DiLeaf3>
+                <Name>Penicillins</Name>
+                <Url>http://www.diseasesdatabase.com/ddb29555.htm</Url>
+              </DiLeaf3>
+              <DiLeaf3>
+                <Name>Sulphonamides</Name>
+                <Url>http://www.diseasesdatabase.com/ddb12668.htm</Url>
+              </DiLeaf3>
+              <DiLeaf3>
+                <Name>Tetracyclines</Name>
+                <Url>http://www.diseasesdatabase.com/ddb29562.htm</Url>
+              </DiLeaf3>
+            </Leafs3>
+          </DiLeaf2>
+          <DiLeaf2>
+            <Name>Drugs, hormones and mediators</Name>
+            <Leafs3>
+              <DiLeaf3>
+                <Name>Aspirin</Name>
+                <Url>http://www.diseasesdatabase.com/ddb985.htm</Url>
+              </DiLeaf3>
+              <DiLeaf3>
+                <Name>Butylscopolamine</Name>
+                <Url>http://www.diseasesdatabase.com/ddb33410.htm</Url>
+              </DiLeaf3>
+              <DiLeaf3>
+                <Name>Chloroquine</Name>
+                <Url>http://www.diseasesdatabase.com/ddb2433.htm</Url>
+              </DiLeaf3>
+              <DiLeaf3>
+                <Name>Chlorpromazine</Name>
+                <Url>http://www.diseasesdatabase.com/ddb2462.htm</Url>
+              </DiLeaf3>
+              <DiLeaf3>
+                <Name>Dapsone</Name>
+                <Url>http://www.diseasesdatabase.com/ddb3460.htm</Url>
+              </DiLeaf3>
+              <DiLeaf3>
+                <Name>Diphenhydramine</Name>
+                <Url>http://www.diseasesdatabase.com/ddb29578.htm</Url>
+              </DiLeaf3>
+              <DiLeaf3>
+                <Name>Gold salts</Name>
+                <Url>http://www.diseasesdatabase.com/ddb5340.htm</Url>
+              </DiLeaf3>
+              <DiLeaf3>
+                <Name>Hydralazine</Name>
+                <Url>http://www.diseasesdatabase.com/ddb6111.htm</Url>
+              </DiLeaf3>
+              <DiLeaf3>
+                <Name>Hyoscine</Name>
+                <Url>http://www.diseasesdatabase.com/ddb29559.htm</Url>
+              </DiLeaf3>
+              <DiLeaf3>
+                <Name>Ibuprofen</Name>
+                <Url>http://www.diseasesdatabase.com/ddb6643.htm</Url>
+              </DiLeaf3>
+              <DiLeaf3>
+                <Name>Ketoprofen</Name>
+                <Url>http://www.diseasesdatabase.com/ddb30001.htm</Url>
+              </DiLeaf3>
+              <DiLeaf3>
+                <Name>Levomepromazine</Name>
+                <Url>http://www.diseasesdatabase.com/ddb29942.htm</Url>
+              </DiLeaf3>
+              <DiLeaf3>
+                <Name>Meprobamate</Name>
+                <Url>http://www.diseasesdatabase.com/ddb29256.htm</Url>
+              </DiLeaf3>
+              <DiLeaf3>
+                <Name>Methscopolamine</Name>
+                <Url>http://www.diseasesdatabase.com/ddb34330.htm</Url>
+              </DiLeaf3>
+              <DiLeaf3>
+                <Name>Metronidazole</Name>
+                <Url>http://www.diseasesdatabase.com/ddb8174.htm</Url>
+              </DiLeaf3>
+              <DiLeaf3>
+                <Name>Paracetamol</Name>
+                <Url>http://www.diseasesdatabase.com/ddb9600.htm</Url>
+              </DiLeaf3>
+              <DiLeaf3>
+                <Name>Perazine</Name>
+                <Url>http://www.diseasesdatabase.com/ddb32371.htm</Url>
+              </DiLeaf3>
+              <DiLeaf3>
+                <Name>Phenolphthalein</Name>
+                <Url>http://www.diseasesdatabase.com/ddb9954.htm</Url>
+              </DiLeaf3>
+              <DiLeaf3>
+                <Name>Phenylbutazone</Name>
+                <Url>http://www.diseasesdatabase.com/ddb9970.htm</Url>
+              </DiLeaf3>
+              <DiLeaf3>
+                <Name>Pipothiazine</Name>
+                <Url>http://www.diseasesdatabase.com/ddb30519.htm</Url>
+              </DiLeaf3>
+              <DiLeaf3>
+                <Name>Procarbazine</Name>
+                <Url>http://www.diseasesdatabase.com/ddb10685.htm</Url>
+              </DiLeaf3>
+              <DiLeaf3>
+                <Name>Quinine</Name>
+                <Url>http://www.diseasesdatabase.com/ddb11124.htm</Url>
+              </DiLeaf3>
+              <DiLeaf3>
+                <Name>Streptomycin</Name>
+                <Url>http://www.diseasesdatabase.com/ddb12540.htm</Url>
+              </DiLeaf3>
+            </Leafs3>
+          </DiLeaf2>
+        </Leafs2>
+      </DiLeafRaw>
+      <DiLeafRaw>
+        <UrlParent>http://www.diseasesdatabase.com/ddb4847.htm</UrlParent>
+        <Url>http://www.diseasesdatabase.com/relationships.asp?glngUserChoice=4847&amp;bytRel=2&amp;blnBW=0&amp;strBB=LR&amp;blnClassSort=255&amp;Key={CB4EDCFD-A923-4F6E-BD41-EC8582CF0EEB}</Url>
+        <Name>may cause or feature +</Name>
+        <Leafs2>
+          <DiLeaf2>
+            <Name>Symptoms and signs</Name>
+            <Leafs3>
+              <DiLeaf3>
+                <Name>Erythema</Name>
+                <Url>http://www.diseasesdatabase.com/ddb4466.htm</Url>
+              </DiLeaf3>
+              <DiLeaf3>
+                <Name>Pruritus</Name>
+                <Url>http://www.diseasesdatabase.com/ddb25363.htm</Url>
+              </DiLeaf3>
+            </Leafs3>
+          </DiLeaf2>
+        </Leafs2>
+      </DiLeafRaw>
+      <DiLeafRaw>
+        <UrlParent>http://www.diseasesdatabase.com/ddb4847.htm</UrlParent>
+        <Url>http://www.diseasesdatabase.com/relationships.asp?glngUserChoice=4847&amp;bytRel=0&amp;blnBW=0&amp;strBB=LR&amp;blnClassSort=0&amp;Key={CB4EDCFD-A923-4F6E-BD41-EC8582CF0EEB}</Url>
+        <Name>belong(s) to the category of +</Name>
+        <Leafs2>
+          <DiLeaf2>
+            <Name>Empty</Name>
+            <Leafs3>
+              <DiLeaf3>
+                <Name>Miscellaneous conditions</Name>
+                <Url>http://www.diseasesdatabase.com/ddb28857.htm</Url>
+              </DiLeaf3>
+            </Leafs3>
+          </DiLeaf2>
+        </Leafs2>
+      </DiLeafRaw>
+    </Leafs>
+  </DiRooItem>
+  <DiRooItem>
+    <Url>http://www.diseasesdatabase.com/ddb32455.htm</Url>
+    <Name>Frasier syndrome information</Name>
+    <Synonyms>
+      <string>Frasier syndrome</string>
+    </Synonyms>
+    <Leafs>
+      <DiLeafRaw>
+        <UrlParent>http://www.diseasesdatabase.com/ddb32455.htm</UrlParent>
+        <Url>http://www.diseasesdatabase.com/relationships.asp?glngUserChoice=32455&amp;bytRel=2&amp;blnBW=0&amp;strBB=LR&amp;blnClassSort=255&amp;Key={7FF7FDF2-27AA-4370-A3BC-870D8CA1C8A4}</Url>
+        <Name>may cause or feature +</Name>
+        <Leafs2>
+          <DiLeaf2>
+            <Name>Miscellaneous conditions</Name>
+            <Leafs3>
+              <DiLeaf3>
+                <Name>Focal segmental glomerulosclerosis</Name>
+                <Url>http://www.diseasesdatabase.com/ddb33013.htm</Url>
+              </DiLeaf3>
+              <DiLeaf3>
+                <Name>Renal failure, chronic</Name>
+                <Url>http://www.diseasesdatabase.com/ddb11288.htm</Url>
+              </DiLeaf3>
+            </Leafs3>
+          </DiLeaf2>
+          <DiLeaf2>
+            <Name>Symptoms and signs</Name>
+            <Leafs3>
+              <DiLeaf3>
+                <Name>Ambiguous genitalia (male genotype)</Name>
+                <Url>http://www.diseasesdatabase.com/ddb14839.htm</Url>
+              </DiLeaf3>
+              <DiLeaf3>
+                <Name>Amenorrhoea</Name>
+                <Url>http://www.diseasesdatabase.com/ddb14843.htm</Url>
+              </DiLeaf3>
+            </Leafs3>
+          </DiLeaf2>
+          <DiLeaf2>
+            <Name>Congenital conditions</Name>
+            <Leafs3>
+              <DiLeaf3>
+                <Name>Gonadal dysgenesis (male)</Name>
+                <Url>http://www.diseasesdatabase.com/ddb29633.htm</Url>
+              </DiLeaf3>
+            </Leafs3>
+          </DiLeaf2>
+        </Leafs2>
+      </DiLeafRaw>
+      <DiLeafRaw>
+        <UrlParent>http://www.diseasesdatabase.com/ddb32455.htm</UrlParent>
+        <Url>http://www.diseasesdatabase.com/relationships.asp?glngUserChoice=32455&amp;bytRel=4&amp;blnBW=0&amp;strBB=LR&amp;blnClassSort=255&amp;Key={7FF7FDF2-27AA-4370-A3BC-870D8CA1C8A4}</Url>
+        <Name>may be a risk factor for +</Name>
+        <Leafs2>
+          <DiLeaf2>
+            <Name>Malignant neoplastic conditions</Name>
+            <Leafs3>
+              <DiLeaf3>
+                <Name>Nephroblastoma</Name>
+                <Url>http://www.diseasesdatabase.com/ddb8896.htm</Url>
+              </DiLeaf3>
+            </Leafs3>
+          </DiLeaf2>
+        </Leafs2>
+      </DiLeafRaw>
+      <DiLeafRaw>
+        <UrlParent>http://www.diseasesdatabase.com/ddb32455.htm</UrlParent>
+        <Url>http://www.diseasesdatabase.com/relationships.asp?glngUserChoice=32455&amp;bytRel=20&amp;blnBW=255&amp;strBB=LR&amp;blnClassSort=0&amp;Key={7FF7FDF2-27AA-4370-A3BC-870D8CA1C8A4}</Url>
+        <Name>may be allelic with +</Name>
+        <Leafs2>
+          <DiLeaf2>
+            <Name>Empty</Name>
+            <Leafs3>
+              <DiLeaf3>
+                <Name>Denys-Drash syndrome</Name>
+                <Url>http://www.diseasesdatabase.com/ddb31499.htm</Url>
+              </DiLeaf3>
+            </Leafs3>
+          </DiLeaf2>
+        </Leafs2>
+      </DiLeafRaw>
+      <DiLeafRaw>
+        <UrlParent>http://www.diseasesdatabase.com/ddb32455.htm</UrlParent>
+        <Url>http://www.diseasesdatabase.com/relationships.asp?glngUserChoice=32455&amp;bytRel=0&amp;blnBW=0&amp;strBB=LR&amp;blnClassSort=0&amp;Key={7FF7FDF2-27AA-4370-A3BC-870D8CA1C8A4}</Url>
+        <Name>belong(s) to the category of +</Name>
+        <Leafs2>
+          <DiLeaf2>
+            <Name>Empty</Name>
+            <Leafs3>
+              <DiLeaf3>
+                <Name>Autosomal dominant conditions</Name>
+                <Url>http://www.diseasesdatabase.com/ddb28801.htm</Url>
+              </DiLeaf3>
+            </Leafs3>
+          </DiLeaf2>
+        </Leafs2>
+      </DiLeafRaw>
+    </Leafs>
+  </DiRooItem>
+  <DiRooItem>
+    <Url>http://www.diseasesdatabase.com/ddb33637.htm</Url>
+    <Name>Gastrodiscoides hominis information</Name>
+    <Synonyms>
+      <string>Gastrodiscoides hominis</string>
+    </Synonyms>
+    <Leafs>
+      <DiLeafRaw>
+        <UrlParent>http://www.diseasesdatabase.com/ddb33637.htm</UrlParent>
+        <Url>http://www.diseasesdatabase.com/relationships.asp?glngUserChoice=33637&amp;bytRel=0&amp;blnBW=0&amp;strBB=LR&amp;blnClassSort=0&amp;Key={121B0044-1201-4D03-A5CD-91845A63C4C9}</Url>
+        <Name>belong(s) to the category of +</Name>
+        <Leafs2>
+          <DiLeaf2>
+            <Name>Empty</Name>
+            <Leafs3>
+              <DiLeaf3>
+                <Name>Helminths and helminthic conditions</Name>
+                <Url>http://www.diseasesdatabase.com/ddb28826.htm</Url>
+              </DiLeaf3>
+            </Leafs3>
+          </DiLeaf2>
+        </Leafs2>
+      </DiLeafRaw>
+    </Leafs>
+  </DiRooItem>
+  <DiRooItem>
+    <Url>http://www.diseasesdatabase.com/ddb5323.htm</Url>
+    <Name>Glycosuria information</Name>
+    <Synonyms>
+      <string>Glycosuria</string>
+      <string>Urine glucose raised</string>
+      <string>Glucosuria</string>
+    </Synonyms>
+    <Leafs>
+      <DiLeafRaw>
+        <UrlParent>http://www.diseasesdatabase.com/ddb5323.htm</UrlParent>
+        <Url>http://www.diseasesdatabase.com/relationships.asp?glngUserChoice=5323&amp;bytRel=2&amp;blnBW=0&amp;strBB=RL&amp;blnClassSort=255&amp;Key={EDF7C3F4-8659-4E68-970F-0474E325EC8B}</Url>
+        <Name>may be caused by or feature of +</Name>
+        <Leafs2>
+          <DiLeaf2>
+            <Name>Miscellaneous conditions</Name>
+            <Leafs3>
+              <DiLeaf3>
+                <Name>Proximal renal tubular acidosis</Name>
+                <Url>http://www.diseasesdatabase.com/ddb11687.htm</Url>
+              </DiLeaf3>
+            </Leafs3>
+          </DiLeaf2>
+          <DiLeaf2>
+            <Name>Biochemical abnormalities</Name>
+            <Leafs3>
+              <DiLeaf3>
+                <Name>Hyperglycaemia</Name>
+                <Url>http://www.diseasesdatabase.com/ddb6234.htm</Url>
+              </DiLeaf3>
+            </Leafs3>
+          </DiLeaf2>
+          <DiLeaf2>
+            <Name>Mendelian inherited conditions</Name>
+            <Leafs3>
+              <DiLeaf3>
+                <Name>Renal glycosuria</Name>
+                <Url>http://www.diseasesdatabase.com/ddb29130.htm</Url>
+              </DiLeaf3>
+            </Leafs3>
+          </DiLeaf2>
+          <DiLeaf2>
+            <Name>Autosomal recessive conditions</Name>
+            <Leafs3>
+              <DiLeaf3>
+                <Name>Fanconi-Bickel syndrome</Name>
+                <Url>http://www.diseasesdatabase.com/ddb31709.htm</Url>
+              </DiLeaf3>
+              <DiLeaf3>
+                <Name>Glucose-galactose malabsorption</Name>
+                <Url>http://www.diseasesdatabase.com/ddb29845.htm</Url>
+              </DiLeaf3>
+              <DiLeaf3>
+                <Name>Nephropathic early-onset cystinosis</Name>
+                <Url>http://www.diseasesdatabase.com/ddb29820.htm</Url>
+              </DiLeaf3>
+              <DiLeaf3>
+                <Name>Shwachman-Diamond syndrome</Name>
+                <Url>http://www.diseasesdatabase.com/ddb11894.htm</Url>
+              </DiLeaf3>
+            </Leafs3>
+          </DiLeaf2>
+          <DiLeaf2>
+            <Name>Endocrine conditions</Name>
+            <Leafs3>
+              <DiLeaf3>
+                <Name>Diabetes mellitus type 2</Name>
+                <Url>http://www.diseasesdatabase.com/ddb3661.htm</Url>
+              </DiLeaf3>
+            </Leafs3>
+          </DiLeaf2>
+          <DiLeaf2>
+            <Name>Cardiac and vascular conditions</Name>
+            <Leafs3>
+              <DiLeaf3>
+                <Name>Subarachnoid haemorrhage</Name>
+                <Url>http://www.diseasesdatabase.com/ddb12602.htm</Url>
+              </DiLeaf3>
+            </Leafs3>
+          </DiLeaf2>
+          <DiLeaf2>
+            <Name>Obstetric conditions</Name>
+            <Leafs3>
+              <DiLeaf3>
+                <Name>Pregnancy</Name>
+                <Url>http://www.diseasesdatabase.com/ddb10545.htm</Url>
+              </DiLeaf3>
+            </Leafs3>
+          </DiLeaf2>
+          <DiLeaf2>
+            <Name>Drugs, hormones and mediators</Name>
+            <Leafs3>
+              <DiLeaf3>
+                <Name>Canagliflozin</Name>
+                <Url>http://www.diseasesdatabase.com/ddb35168.htm</Url>
+              </DiLeaf3>
+              <DiLeaf3>
+                <Name>Dapagliflozin</Name>
+                <Url>http://www.diseasesdatabase.com/ddb34777.htm</Url>
+              </DiLeaf3>
+              <DiLeaf3>
+                <Name>Empagliflozin</Name>
+                <Url>http://www.diseasesdatabase.com/ddb35309.htm</Url>
+              </DiLeaf3>
+              <DiLeaf3>
+                <Name>Ertugliflozin</Name>
+                <Url>http://www.diseasesdatabase.com/ddb37714.htm</Url>
+              </DiLeaf3>
+            </Leafs3>
+          </DiLeaf2>
+        </Leafs2>
+      </DiLeafRaw>
+      <DiLeafRaw>
+        <UrlParent>http://www.diseasesdatabase.com/ddb5323.htm</UrlParent>
+        <Url>http://www.diseasesdatabase.com/relationships.asp?glngUserChoice=5323&amp;bytRel=2&amp;blnBW=0&amp;strBB=LR&amp;blnClassSort=255&amp;Key={EDF7C3F4-8659-4E68-970F-0474E325EC8B}</Url>
+        <Name>may cause or feature +</Name>
+        <Leafs2>
+          <DiLeaf2>
+            <Name>Biochemical abnormalities</Name>
+            <Leafs3>
+              <DiLeaf3>
+                <Name>Urine reducing substances</Name>
+                <Url>http://www.diseasesdatabase.com/ddb13580.htm</Url>
+              </DiLeaf3>
+            </Leafs3>
+          </DiLeaf2>
+        </Leafs2>
+      </DiLeafRaw>
+      <DiLeafRaw>
+        <UrlParent>http://www.diseasesdatabase.com/ddb5323.htm</UrlParent>
+        <Url>http://www.diseasesdatabase.com/relationships.asp?glngUserChoice=5323&amp;bytRel=4&amp;blnBW=0&amp;strBB=LR&amp;blnClassSort=255&amp;Key={EDF7C3F4-8659-4E68-970F-0474E325EC8B}</Url>
+        <Name>may be a risk factor for +</Name>
+        <Leafs2>
+          <DiLeaf2>
+            <Name>Infection and infective conditions</Name>
+            <Leafs3>
+              <DiLeaf3>
+                <Name>Urinary tract infection</Name>
+                <Url>http://www.diseasesdatabase.com/ddb13657.htm</Url>
+              </DiLeaf3>
+            </Leafs3>
+          </DiLeaf2>
+        </Leafs2>
+      </DiLeafRaw>
+      <DiLeafRaw>
+        <UrlParent>http://www.diseasesdatabase.com/ddb5323.htm</UrlParent>
+        <Url>http://www.diseasesdatabase.com/relationships.asp?glngUserChoice=5323&amp;bytRel=0&amp;blnBW=0&amp;strBB=LR&amp;blnClassSort=0&amp;Key={EDF7C3F4-8659-4E68-970F-0474E325EC8B}</Url>
+        <Name>belong(s) to the category of +</Name>
+        <Leafs2>
+          <DiLeaf2>
+            <Name>Empty</Name>
+            <Leafs3>
+              <DiLeaf3>
+                <Name>Biochemical abnormality</Name>
+                <Url>http://www.diseasesdatabase.com/ddb28807.htm</Url>
+              </DiLeaf3>
+            </Leafs3>
+          </DiLeaf2>
+        </Leafs2>
+      </DiLeafRaw>
+    </Leafs>
+  </DiRooItem>
+  <DiRooItem>
+    <Url>http://www.diseasesdatabase.com/ddb32519.htm</Url>
+    <Name>Syndactyly type 4 information</Name>
+    <Synonyms>
+      <string>Syndactyly type 4</string>
+      <string>Haas type syndactyly syndrome</string>
+    </Synonyms>
+    <Leafs>
+      <DiLeafRaw>
+        <UrlParent>http://www.diseasesdatabase.com/ddb32519.htm</UrlParent>
+        <Url>http://www.diseasesdatabase.com/relationships.asp?glngUserChoice=32519&amp;bytRel=2&amp;blnBW=0&amp;strBB=LR&amp;blnClassSort=255&amp;Key={95FB51BD-1D3E-41EB-860D-CD25201A2AF3}</Url>
+        <Name>may cause or feature +</Name>
+        <Leafs2>
+          <DiLeaf2>
+            <Name>Symptoms and signs</Name>
+            <Leafs3>
+              <DiLeaf3>
+                <Name>Polydactyly</Name>
+                <Url>http://www.diseasesdatabase.com/ddb24853.htm</Url>
+              </DiLeaf3>
+              <DiLeaf3>
+                <Name>Syndactyly</Name>
+                <Url>http://www.diseasesdatabase.com/ddb29330.htm</Url>
+              </DiLeaf3>
+            </Leafs3>
+          </DiLeaf2>
+        </Leafs2>
+      </DiLeafRaw>
+      <DiLeafRaw>
+        <UrlParent>http://www.diseasesdatabase.com/ddb32519.htm</UrlParent>
+        <Url>http://www.diseasesdatabase.com/relationships.asp?glngUserChoice=32519&amp;bytRel=0&amp;blnBW=0&amp;strBB=LR&amp;blnClassSort=0&amp;Key={95FB51BD-1D3E-41EB-860D-CD25201A2AF3}</Url>
+        <Name>belong(s) to the category of +</Name>
+        <Leafs2>
+          <DiLeaf2>
+            <Name>Empty</Name>
+            <Leafs3>
+              <DiLeaf3>
+                <Name>Autosomal dominant conditions</Name>
+                <Url>http://www.diseasesdatabase.com/ddb28801.htm</Url>
+              </DiLeaf3>
+            </Leafs3>
+          </DiLeaf2>
+        </Leafs2>
+      </DiLeafRaw>
+    </Leafs>
+  </DiRooItem>
+  <DiRooItem>
+    <Url>http://www.diseasesdatabase.com/ddb5728.htm</Url>
+    <Name>Hepatic failure information</Name>
+    <Synonyms>
+      <string>Hepatic failure</string>
+      <string>Liver failure</string>
+    </Synonyms>
+    <Leafs>
+      <DiLeafRaw>
+        <UrlParent>http://www.diseasesdatabase.com/ddb5728.htm</UrlParent>
+        <Url>http://www.diseasesdatabase.com/relationships.asp?glngUserChoice=5728&amp;bytRel=2&amp;blnBW=0&amp;strBB=RL&amp;blnClassSort=255&amp;Key={C6E3D5E3-DE73-4FAB-8525-D298381044CF}</Url>
+        <Name>may be caused by or feature of +</Name>
+        <Leafs2>
+          <DiLeaf2>
+            <Name>Miscellaneous conditions</Name>
+            <Leafs3>
+              <DiLeaf3>
+                <Name>Cirrhosis of liver</Name>
+                <Url>http://www.diseasesdatabase.com/ddb2729.htm</Url>
+              </DiLeaf3>
+              <DiLeaf3>
+                <Name>Haemosiderosis</Name>
+                <Url>http://www.diseasesdatabase.com/ddb5581.htm</Url>
+              </DiLeaf3>
+              <DiLeaf3>
+                <Name>Reye syndrome</Name>
+                <Url>http://www.diseasesdatabase.com/ddb11463.htm</Url>
+              </DiLeaf3>
+            </Leafs3>
+          </DiLeaf2>
+          <DiLeaf2>
+            <Name>Biochemical abnormalities</Name>
+            <Leafs3>
+              <DiLeaf3>
+                <Name>Cholestatic jaundice</Name>
+                <Url>http://www.diseasesdatabase.com/ddb9121.htm</Url>
+              </DiLeaf3>
+              <DiLeaf3>
+                <Name>Hepatocellular jaundice</Name>
+                <Url>http://www.diseasesdatabase.com/ddb20061.htm</Url>
+              </DiLeaf3>
+            </Leafs3>
+          </DiLeaf2>
+          <DiLeaf2>
+            <Name>Congenital conditions</Name>
+            <Leafs3>
+              <DiLeaf3>
+                <Name>Patent ductus venosus</Name>
+                <Url>http://www.diseasesdatabase.com/ddb32067.htm</Url>
+              </DiLeaf3>
+            </Leafs3>
+          </DiLeaf2>
+          <DiLeaf2>
+            <Name>Mendelian inherited conditions</Name>
+            <Leafs3>
+              <DiLeaf3>
+                <Name>Haemochromatosis</Name>
+                <Url>http://www.diseasesdatabase.com/ddb5490.htm</Url>
+              </DiLeaf3>
+              <DiLeaf3>
+                <Name>Sickle cell disease</Name>
+                <Url>http://www.diseasesdatabase.com/ddb12069.htm</Url>
+              </DiLeaf3>
+            </Leafs3>
+          </DiLeaf2>
+          <DiLeaf2>
+            <Name>Autosomal recessive conditions</Name>
+            <Leafs3>
+              <DiLeaf3>
+                <Name>Alpha-1-antitrypsin deficiency</Name>
+                <Url>http://www.diseasesdatabase.com/ddb434.htm</Url>
+              </DiLeaf3>
+              <DiLeaf3>
+                <Name>Carnitine palmitoyltransferase 1 deficiency</Name>
+                <Url>http://www.diseasesdatabase.com/ddb32535.htm</Url>
+              </DiLeaf3>
+              <DiLeaf3>
+                <Name>Combined oxidative phosphorylation deficiency 1</Name>
+                <Url>http://www.diseasesdatabase.com/ddb36674.htm</Url>
+              </DiLeaf3>
+              <DiLeaf3>
+                <Name>Cystic fibrosis</Name>
+                <Url>http://www.diseasesdatabase.com/ddb3347.htm</Url>
+              </DiLeaf3>
+              <DiLeaf3>
+                <Name>Dihydrolipoamide dehydrogenase deficiency</Name>
+                <Url>http://www.diseasesdatabase.com/ddb33442.htm</Url>
+              </DiLeaf3>
+              <DiLeaf3>
+                <Name>Glycogenosis type 4</Name>
+                <Url>http://www.diseasesdatabase.com/ddb5303.htm</Url>
+              </DiLeaf3>
+              <DiLeaf3>
+                <Name>Hepatic venoocclusive disease with immunodeficiency</Name>
+                <Url>http://www.diseasesdatabase.com/ddb34365.htm</Url>
+              </DiLeaf3>
+              <DiLeaf3>
+                <Name>Lecithin cholesterol acyltransferase deficiency</Name>
+                <Url>http://www.diseasesdatabase.com/ddb7343.htm</Url>
+              </DiLeaf3>
+              <DiLeaf3>
+                <Name>MEGDEL syndrome</Name>
+                <Url>http://www.diseasesdatabase.com/ddb35289.htm</Url>
+              </DiLeaf3>
+              <DiLeaf3>
+                <Name>Mitochondrial DNA depletion syndrome, hepatocerebral form</Name>
+                <Url>http://www.diseasesdatabase.com/ddb34764.htm</Url>
+              </DiLeaf3>
+              <DiLeaf3>
+                <Name>North American Indian childhood cirrhosis</Name>
+                <Url>http://www.diseasesdatabase.com/ddb34966.htm</Url>
+              </DiLeaf3>
+              <DiLeaf3>
+                <Name>Progressive familial intrahepatic cholestasis type 1</Name>
+                <Url>http://www.diseasesdatabase.com/ddb29084.htm</Url>
+              </DiLeaf3>
+              <DiLeaf3>
+                <Name>Tyrosinaemia type 1</Name>
+                <Url>http://www.diseasesdatabase.com/ddb13478.htm</Url>
+              </DiLeaf3>
+              <DiLeaf3>
+                <Name>Wilson disease</Name>
+                <Url>http://www.diseasesdatabase.com/ddb14152.htm</Url>
+              </DiLeaf3>
+              <DiLeaf3>
+                <Name>Zellweger spectrum</Name>
+                <Url>http://www.diseasesdatabase.com/ddb14248.htm</Url>
+              </DiLeaf3>
+            </Leafs3>
+          </DiLeaf2>
+          <DiLeaf2>
+            <Name>X-linked inherited conditions</Name>
+            <Leafs3>
+              <DiLeaf3>
+                <Name>Erythropoietic protoporphyria, X-linked</Name>
+                <Url>http://www.diseasesdatabase.com/ddb35156.htm</Url>
+              </DiLeaf3>
+              <DiLeaf3>
+                <Name>X-linked lymphoproliferative disease</Name>
+                <Url>http://www.diseasesdatabase.com/ddb3998.htm</Url>
+              </DiLeaf3>
+            </Leafs3>
+          </DiLeaf2>
+          <DiLeaf2>
+            <Name>Cardiac and vascular conditions</Name>
+            <Leafs3>
+              <DiLeaf3>
+                <Name>Cardiac failure, right sided</Name>
+                <Url>http://www.diseasesdatabase.com/ddb2114.htm</Url>
+              </DiLeaf3>
+              <DiLeaf3>
+                <Name>Hepatic vein thrombosis</Name>
+                <Url>http://www.diseasesdatabase.com/ddb1735.htm</Url>
+              </DiLeaf3>
+            </Leafs3>
+          </DiLeaf2>
+          <DiLeaf2>
+            <Name>Autoimmune conditions</Name>
+            <Leafs3>
+              <DiLeaf3>
+                <Name>Primary biliary cirrhosis</Name>
+                <Url>http://www.diseasesdatabase.com/ddb10615.htm</Url>
+              </DiLeaf3>
+            </Leafs3>
+          </DiLeaf2>
+          <DiLeaf2>
+            <Name>Malignant neoplastic conditions</Name>
+            <Leafs3>
+              <DiLeaf3>
+                <Name>Liver metastases</Name>
+                <Url>http://www.diseasesdatabase.com/ddb7565.htm</Url>
+              </DiLeaf3>
+            </Leafs3>
+          </DiLeaf2>
+          <DiLeaf2>
+            <Name>Obstetric conditions</Name>
+            <Leafs3>
+              <DiLeaf3>
+                <Name>Acute fatty liver of pregnancy</Name>
+                <Url>http://www.diseasesdatabase.com/ddb32879.htm</Url>
+              </DiLeaf3>
+            </Leafs3>
+          </DiLeaf2>
+          <DiLeaf2>
+            <Name>Helminths and helminthic conditions</Name>
+            <Leafs3>
+              <DiLeaf3>
+                <Name>Fasciola hepatica</Name>
+                <Url>http://www.diseasesdatabase.com/ddb4757.htm</Url>
+              </DiLeaf3>
+            </Leafs3>
+          </DiLeaf2>
+          <DiLeaf2>
+            <Name>Protozoa and protozoal conditions</Name>
+            <Leafs3>
+              <DiLeaf3>
+                <Name>Visceral leishmaniasis</Name>
+                <Url>http://www.diseasesdatabase.com/ddb7070.htm</Url>
+              </DiLeaf3>
+            </Leafs3>
+          </DiLeaf2>
+          <DiLeaf2>
+            <Name>Viruses and viral conditions</Name>
+            <Leafs3>
+              <DiLeaf3>
+                <Name>Hepatitis B</Name>
+                <Url>http://www.diseasesdatabase.com/ddb5765.htm</Url>
+              </DiLeaf3>
+              <DiLeaf3>
+                <Name>Hepatitis C</Name>
+                <Url>http://www.diseasesdatabase.com/ddb5783.htm</Url>
+              </DiLeaf3>
+            </Leafs3>
+          </DiLeaf2>
+          <DiLeaf2>
+            <Name>Iatrogenic conditions</Name>
+            <Leafs3>
+              <DiLeaf3>
+                <Name>Graft versus host disease</Name>
+                <Url>http://www.diseasesdatabase.com/ddb5388.htm</Url>
+              </DiLeaf3>
+            </Leafs3>
+          </DiLeaf2>
+          <DiLeaf2>
+            <Name>Chemicals</Name>
+            <Leafs3>
+              <DiLeaf3>
+                <Name>Gyromitrin</Name>
+                <Url>http://www.diseasesdatabase.com/ddb34944.htm</Url>
+              </DiLeaf3>
+              <DiLeaf3>
+                <Name>Toluene</Name>
+                <Url>http://www.diseasesdatabase.com/ddb31145.htm</Url>
+              </DiLeaf3>
+            </Leafs3>
+          </DiLeaf2>
+          <DiLeaf2>
+            <Name>Drug groups</Name>
+            <Leafs3>
+              <DiLeaf3>
+                <Name>Amatoxins</Name>
+                <Url>http://www.diseasesdatabase.com/ddb34942.htm</Url>
+              </DiLeaf3>
+              <DiLeaf3>
+                <Name>Iron compounds</Name>
+                <Url>http://www.diseasesdatabase.com/ddb6959.htm</Url>
+              </DiLeaf3>
+            </Leafs3>
+          </DiLeaf2>
+          <DiLeaf2>
+            <Name>Drugs, hormones and mediators</Name>
+            <Leafs3>
+              <DiLeaf3>
+                <Name>Bromfenac</Name>
+                <Url>http://www.diseasesdatabase.com/ddb30977.htm</Url>
+              </DiLeaf3>
+              <DiLeaf3>
+                <Name>Erlotinib</Name>
+                <Url>http://www.diseasesdatabase.com/ddb32968.htm</Url>
+              </DiLeaf3>
+              <DiLeaf3>
+                <Name>Ethanol</Name>
+                <Url>http://www.diseasesdatabase.com/ddb325.htm</Url>
+              </DiLeaf3>
+              <DiLeaf3>
+                <Name>Interferon beta</Name>
+                <Url>http://www.diseasesdatabase.com/ddb6843.htm</Url>
+              </DiLeaf3>
+              <DiLeaf3>
+                <Name>Ketoconazole</Name>
+                <Url>http://www.diseasesdatabase.com/ddb7170.htm</Url>
+              </DiLeaf3>
+              <DiLeaf3>
+                <Name>Leflunomide</Name>
+                <Url>http://www.diseasesdatabase.com/ddb30338.htm</Url>
+              </DiLeaf3>
+              <DiLeaf3>
+                <Name>Methotrexate</Name>
+                <Url>http://www.diseasesdatabase.com/ddb8116.htm</Url>
+              </DiLeaf3>
+              <DiLeaf3>
+                <Name>Nefazodone</Name>
+                <Url>http://www.diseasesdatabase.com/ddb30043.htm</Url>
+              </DiLeaf3>
+              <DiLeaf3>
+                <Name>Nevirapine</Name>
+                <Url>http://www.diseasesdatabase.com/ddb8996.htm</Url>
+              </DiLeaf3>
+              <DiLeaf3>
+                <Name>Nitisinone</Name>
+                <Url>http://www.diseasesdatabase.com/ddb32239.htm</Url>
+              </DiLeaf3>
+              <DiLeaf3>
+                <Name>Paracetamol</Name>
+                <Url>http://www.diseasesdatabase.com/ddb9600.htm</Url>
+              </DiLeaf3>
+              <DiLeaf3>
+                <Name>Pazopanib</Name>
+                <Url>http://www.diseasesdatabase.com/ddb34796.htm</Url>
+              </DiLeaf3>
+              <DiLeaf3>
+                <Name>Pemoline</Name>
+                <Url>http://www.diseasesdatabase.com/ddb29983.htm</Url>
+              </DiLeaf3>
+              <DiLeaf3>
+                <Name>Phenazopyridine</Name>
+                <Url>http://www.diseasesdatabase.com/ddb30410.htm</Url>
+              </DiLeaf3>
+              <DiLeaf3>
+                <Name>Propylthiouracil</Name>
+                <Url>http://www.diseasesdatabase.com/ddb10771.htm</Url>
+              </DiLeaf3>
+              <DiLeaf3>
+                <Name>Pyrazinamide</Name>
+                <Url>http://www.diseasesdatabase.com/ddb11068.htm</Url>
+              </DiLeaf3>
+              <DiLeaf3>
+                <Name>Regorafenib</Name>
+                <Url>http://www.diseasesdatabase.com/ddb35108.htm</Url>
+              </DiLeaf3>
+              <DiLeaf3>
+                <Name>Suloctidil</Name>
+                <Url>http://www.diseasesdatabase.com/ddb32168.htm</Url>
+              </DiLeaf3>
+              <DiLeaf3>
+                <Name>Troglitazone</Name>
+                <Url>http://www.diseasesdatabase.com/ddb13392.htm</Url>
+              </DiLeaf3>
+              <DiLeaf3>
+                <Name>Zalcitabine</Name>
+                <Url>http://www.diseasesdatabase.com/ddb14246.htm</Url>
+              </DiLeaf3>
+            </Leafs3>
+          </DiLeaf2>
+        </Leafs2>
+      </DiLeafRaw>
+      <DiLeafRaw>
+        <UrlParent>http://www.diseasesdatabase.com/ddb5728.htm</UrlParent>
+        <Url>http://www.diseasesdatabase.com/relationships.asp?glngUserChoice=5728&amp;bytRel=2&amp;blnBW=0&amp;strBB=LR&amp;blnClassSort=255&amp;Key={C6E3D5E3-DE73-4FAB-8525-D298381044CF}</Url>
+        <Name>may cause or feature +</Name>
+        <Leafs2>
+          <DiLeaf2>
+            <Name>Miscellaneous conditions</Name>
+            <Leafs3>
+              <DiLeaf3>
+                <Name>Hepatorenal syndrome</Name>
+                <Url>http://www.diseasesdatabase.com/ddb5810.htm</Url>
+              </DiLeaf3>
+              <DiLeaf3>
+                <Name>Immune deficiency</Name>
+                <Url>http://www.diseasesdatabase.com/ddb21506.htm</Url>
+              </DiLeaf3>
+              <DiLeaf3>
+                <Name>Pleural effusion</Name>
+                <Url>http://www.diseasesdatabase.com/ddb10122.htm</Url>
+              </DiLeaf3>
+              <DiLeaf3>
+                <Name>Respiratory failure</Name>
+                <Url>http://www.diseasesdatabase.com/ddb6623.htm</Url>
+              </DiLeaf3>
+            </Leafs3>
+          </DiLeaf2>
+          <DiLeaf2>
+            <Name>Symptoms and signs</Name>
+            <Leafs3>
+              <DiLeaf3>
+                <Name>Acute confusional state</Name>
+                <Url>http://www.diseasesdatabase.com/ddb29284.htm</Url>
+              </DiLeaf3>
+              <DiLeaf3>
+                <Name>Ascites</Name>
+                <Url>http://www.diseasesdatabase.com/ddb943.htm</Url>
+              </DiLeaf3>
+              <DiLeaf3>
+                <Name>Asterixis</Name>
+                <Url>http://www.diseasesdatabase.com/ddb33950.htm</Url>
+              </DiLeaf3>
+              <DiLeaf3>
+                <Name>Body odour</Name>
+                <Url>http://www.diseasesdatabase.com/ddb28886.htm</Url>
+              </DiLeaf3>
+              <DiLeaf3>
+                <Name>Headache</Name>
+                <Url>http://www.diseasesdatabase.com/ddb19825.htm</Url>
+              </DiLeaf3>
+              <DiLeaf3>
+                <Name>Oedema</Name>
+                <Url>http://www.diseasesdatabase.com/ddb9148.htm</Url>
+              </DiLeaf3>
+              <DiLeaf3>
+                <Name>Palmar erythema</Name>
+                <Url>http://www.diseasesdatabase.com/ddb24070.htm</Url>
+              </DiLeaf3>
+              <DiLeaf3>
+                <Name>Reduced level of consciousness</Name>
+                <Url>http://www.diseasesdatabase.com/ddb16940.htm</Url>
+              </DiLeaf3>
+              <DiLeaf3>
+                <Name>Telangiectasia</Name>
+                <Url>http://www.diseasesdatabase.com/ddb27395.htm</Url>
+              </DiLeaf3>
+              <DiLeaf3>
+                <Name>Tremor</Name>
+                <Url>http://www.diseasesdatabase.com/ddb27742.htm</Url>
+              </DiLeaf3>
+            </Leafs3>
+          </DiLeaf2>
+          <DiLeaf2>
+            <Name>Haematological abnormalities</Name>
+            <Leafs3>
+              <DiLeaf3>
+                <Name>Clotting factor dysfunction or deficiency</Name>
+                <Url>http://www.diseasesdatabase.com/ddb29158.htm</Url>
+              </DiLeaf3>
+              <DiLeaf3>
+                <Name>Leptocytosis</Name>
+                <Url>http://www.diseasesdatabase.com/ddb7395.htm</Url>
+              </DiLeaf3>
+              <DiLeaf3>
+                <Name>Neutrophil nuclear hypersegmentation</Name>
+                <Url>http://www.diseasesdatabase.com/ddb29516.htm</Url>
+              </DiLeaf3>
+            </Leafs3>
+          </DiLeaf2>
+          <DiLeaf2>
+            <Name>Biochemical abnormalities</Name>
+            <Leafs3>
+              <DiLeaf3>
+                <Name>Ammonia levels raised (blood)</Name>
+                <Url>http://www.diseasesdatabase.com/ddb20468.htm</Url>
+              </DiLeaf3>
+              <DiLeaf3>
+                <Name>Fructosuria</Name>
+                <Url>http://www.diseasesdatabase.com/ddb29685.htm</Url>
+              </DiLeaf3>
+              <DiLeaf3>
+                <Name>Hepatocellular jaundice</Name>
+                <Url>http://www.diseasesdatabase.com/ddb20061.htm</Url>
+              </DiLeaf3>
+              <DiLeaf3>
+                <Name>Hypoglycaemia</Name>
+                <Url>http://www.diseasesdatabase.com/ddb6431.htm</Url>
+              </DiLeaf3>
+              <DiLeaf3>
+                <Name>Hypophosphataemia</Name>
+                <Url>http://www.diseasesdatabase.com/ddb6503.htm</Url>
+              </DiLeaf3>
+              <DiLeaf3>
+                <Name>Hypoproteinaemia</Name>
+                <Url>http://www.diseasesdatabase.com/ddb6534.htm</Url>
+              </DiLeaf3>
+              <DiLeaf3>
+                <Name>Hypouricemia</Name>
+                <Url>http://www.diseasesdatabase.com/ddb21432.htm</Url>
+              </DiLeaf3>
+              <DiLeaf3>
+                <Name>Lactic acidosis</Name>
+                <Url>http://www.diseasesdatabase.com/ddb29145.htm</Url>
+              </DiLeaf3>
+              <DiLeaf3>
+                <Name>Pyruvic acid levels raised (blood)</Name>
+                <Url>http://www.diseasesdatabase.com/ddb25769.htm</Url>
+              </DiLeaf3>
+              <DiLeaf3>
+                <Name>Renin levels raised (serum)</Name>
+                <Url>http://www.diseasesdatabase.com/ddb26200.htm</Url>
+              </DiLeaf3>
+              <DiLeaf3>
+                <Name>Respiratory alkalosis</Name>
+                <Url>http://www.diseasesdatabase.com/ddb406.htm</Url>
+              </DiLeaf3>
+              <DiLeaf3>
+                <Name>Urobilinogen levels low (urine)</Name>
+                <Url>http://www.diseasesdatabase.com/ddb13591.htm</Url>
+              </DiLeaf3>
+            </Leafs3>
+          </DiLeaf2>
+          <DiLeaf2>
+            <Name>Endocrine conditions</Name>
+            <Leafs3>
+              <DiLeaf3>
+                <Name>Hyperaldosteronism</Name>
+                <Url>http://www.diseasesdatabase.com/ddb6187.htm</Url>
+              </DiLeaf3>
+            </Leafs3>
+          </DiLeaf2>
+          <DiLeaf2>
+            <Name>Neurologic conditions</Name>
+            <Leafs3>
+              <DiLeaf3>
+                <Name>Cerebral oedema</Name>
+                <Url>http://www.diseasesdatabase.com/ddb2227.htm</Url>
+              </DiLeaf3>
+              <DiLeaf3>
+                <Name>Raised intracranial pressure</Name>
+                <Url>http://www.diseasesdatabase.com/ddb25810.htm</Url>
+              </DiLeaf3>
+            </Leafs3>
+          </DiLeaf2>
+        </Leafs2>
+      </DiLeafRaw>
+      <DiLeafRaw>
+        <UrlParent>http://www.diseasesdatabase.com/ddb5728.htm</UrlParent>
+        <Url>http://www.diseasesdatabase.com/relationships.asp?glngUserChoice=5728&amp;bytRel=6&amp;blnBW=255&amp;strBB=LR&amp;blnClassSort=255&amp;Key={C6E3D5E3-DE73-4FAB-8525-D298381044CF}</Url>
+        <Name>may be associated with +</Name>
+        <Leafs2>
+          <DiLeaf2>
+            <Name>Miscellaneous conditions</Name>
+            <Leafs3>
+              <DiLeaf3>
+                <Name>Hepatopulmonary syndrome</Name>
+                <Url>http://www.diseasesdatabase.com/ddb32063.htm</Url>
+              </DiLeaf3>
+            </Leafs3>
+          </DiLeaf2>
+        </Leafs2>
+      </DiLeafRaw>
+      <DiLeafRaw>
+        <UrlParent>http://www.diseasesdatabase.com/ddb5728.htm</UrlParent>
+        <Url>http://www.diseasesdatabase.com/relationships.asp?glngUserChoice=5728&amp;bytRel=0&amp;blnBW=0&amp;strBB=LR&amp;blnClassSort=0&amp;Key={C6E3D5E3-DE73-4FAB-8525-D298381044CF}</Url>
+        <Name>belong(s) to the category of +</Name>
+        <Leafs2>
+          <DiLeaf2>
+            <Name>Empty</Name>
+            <Leafs3>
+              <DiLeaf3>
+                <Name>Miscellaneous conditions</Name>
+                <Url>http://www.diseasesdatabase.com/ddb28857.htm</Url>
+              </DiLeaf3>
+            </Leafs3>
+          </DiLeaf2>
+        </Leafs2>
+      </DiLeafRaw>
+    </Leafs>
+  </DiRooItem>
