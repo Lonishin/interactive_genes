@@ -1,37 +1,18 @@
-## Welcome to GitHub Pages
 
-You can use the [editor on GitHub](https://github.com/Lonishin/interactive_genes/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+### Interactive Phenotype Map
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+This is my second semester project in Bioinformatics Institute.
+The main goal of this project is to make convenient app for doctors and geneticists, where they can view connection between input phenotypes.
 
-### Markdown
+# Main objectives were:
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+1. Make an app, which will visualize phenotypes
+2. Find connections between risks and phenotypes from database
 
-```markdown
-Syntax highlighted code block
 
-# Header 1
-## Header 2
-### Header 3
+The main packages, which are used here are Shiny and VisNetwork.
 
-- Bulleted
-- List
+You can find open this app in every browser, here is url - https://lonishin.shinyapps.io/interactive_phenotype_map/ 
+This is how this program look like in browser:
+![Example](https://github.com/Lonishin/interactive_genes/blob/master/example.jpg)
 
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Lonishin/interactive_genes/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
