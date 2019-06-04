@@ -1,7 +1,8 @@
 
 # Interactive Phenotype Map
 
-This is my second-semester project in Bioinformatics Institute.
+__Students:__ Liubov Lonishin (Bioinformatics Institute, Saint-Petersburg)
+__Supervisors:__ Valery Ilinsky, Alexander Rakitko (Genotek, Moscow)
 
 ## Project description
 Currently, doctors and specialists have a problem with the analysis of large patient data obtained as a result of a genetic test. Sometimes it is impossible to find a connection between the individual phenotypes predicted in the course of interpretation, especially between drugs. Our application is designed to find these connections and help geneticists.
