@@ -1,7 +1,7 @@
 
 # Interactive Phenotype Map
 
-__Students:__ Liubov Lonishin (Bioinformatics Institute, Saint-Petersburg)
+__Students:__ Liubov Lonishin (Bioinformatics Institute, Saint-Petersburg)\
 __Supervisors:__ Valery Ilinsky, Alexander Rakitko (Genotek, Moscow)
 
 ## Project description
